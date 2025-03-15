@@ -2,17 +2,320 @@
 <html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Vite Template</title>
+    <title>H.Legal</title>
   </head>
   <body>
     <div class="wrapper">
-      <h1 class="title">
-        Привіт! Якщо цей текст з’явився, значить все зроблено правильно ))
-      </h1>
-    </div>
+      <header class="header">
+        <div class="container">
+          <div class="header__top-line">
+            <ul class="header__lang-list">
+              <li class="header__lang-list-item">
+                <a href="#">ук</a>
+              </li>
+              <li class="header__lang-list-item active">
+                <a href="#">en</a>
+              </li>
+            </ul>
+            <address class="header__address md-show">
+              Kyiv, Mechnikova str., 14/1
+            </address>
+            <a href="tel:0800211927" class="header__phone">
+              0800 211 927
+            </a>
+            <div class="header__fb md-show">
+              <a href="#">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_164831_2563)">
+                  <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_164831_2563">
+                  <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="header__bottom-line">
+            <img class="header__logo" src="/src/img/logo.svg" alt="logo">
+            <div class="header__burger-menu">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 10.5H25" stroke="white" stroke-width="2"/>
+                  <path d="M7 16.5H25" stroke="white" stroke-width="2"/>
+                  <path d="M7 22.5H25" stroke="white" stroke-width="2"/>
+              </svg>
+            </div>         
+          </div>
+          <div class="header__menu">
+            <div class="header__menu-close">
+               <img src="/src/img/close.svg" alt="close icon">
+            </div>
+            <ul>
+              <li class="header__menu-item"><a href="#">about us</a></li>
+              <li class="header__menu-item"><a href="services.html">послуги</a></li>
+              <li class="header__menu-item"><a href="#">команда</a></li>
+              <li class="header__menu-item"><a href="#">публікації</a></li>
+              <li class="header__menu-item"><a href="#">контакти</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="bg-box">
+        <div class="container">
+          <div class="hero">
+            <h1 class="hero__title">your legal solutions provider</h1>
+            <a class="hero__scroll" href="#tabs">
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_22728_11883)">
+                <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2"/>
+                <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_22728_11883">
+                <rect width="42" height="42" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+            </a>
+          </div>
+          <div id="tabs" class="tabs">
+            <ul class="tabs__list">
+              <li class="tabs__link active">Consistent</li>
+              <li class="tabs__link">Customer oriented</li>
+              <li class="tabs__link">Innovative</li>
+              <li class="tabs__link">Business oriented</li>
+            </ul>
+            <div class="tabs__content">
+              <div class="tabs__content-text active">
+                <h2>0-We turn the idea of legal services</h2>
+                <p>0-Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+              </div>
+              <div class="tabs__content-text">
+                <h2>1-We turn the idea of legal services</h2>
+                <p>1-Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+              </div>
+              <div class="tabs__content-text">
+                <h2>2-We turn the idea of legal services</h2>
+                <p>2-Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+              </div>
+              <div class="tabs__content-text">
+                <h2>3-We turn the idea of legal services</h2>
+                <p>3-Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+              </div>
+            </div>
+          </div>
+          <div class="services">
+            <h3 class="services__crumb">services</h3>
+            <h2 class="services__title">What can we do better than others?</h2>
+            <ul class="services__list">
+              <li class="services__list-item">
+                <img src="/src/img/service-1.svg" alt="service icon">
+                <h3>IT and e-commerce</h3>
+                <p>An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.</p>
+              </li>
+              <li class="services__list-item">
+                <img src="/src/img/service-2.svg" alt="service icon">
+                <h3>Comprehensive daily legal support</h3>
+                <p>In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.</p>
+              </li>
+              <li class="services__list-item">
+                <img src="/src/img/service-6.svg" alt="service icon">
+                <h3>Structuring corporate relationships</h3>
+                <p>Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into the daily life of your company.</p>
+              </li>
+              <li class="services__list-item">
+                <img src="/src/img/service-3.svg" alt="service icon">
+                <h3>Building contractual relations</h3>
+                <p>Once a week, or week after month, you have your own lawyer by your side. Anyone in the company can catch it at the coffee maker and just talk about current affairs instead of waiting for update status.</p>
+              </li>
+              <li class="services__list-item">
+                <img src="/src/img/service-4.svg" alt="service icon">
+                <h3>Protection of business, intellectual property</h3>
+                <p>And all the other time he will work on new diverse projects, so he will definitely not stop in professional development. One way or another, all Axon Partners will work for you instead of a corporate lawyer.</p>
+              </li>
+              <li class="services__list-item">
+                <img src="/src/img/service-5.svg" alt="service icon">
+                <h3>Judicial representation</h3>
+                <p>Is it a small, medium-sized company or a market leader? Local business or multinational company? Do you have your own legal department or not?</p>
+              </li>
+            </ul>
+          </div>
+        </div>        
+      </div>
+      <div class="container">
+        <div class="separator"></div>
+      </div>
+      <div class="container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="swiper-slide__img sm-show md-hide" src="/src/img/team-1.jpg" alt="team member">
+              <img class="swiper-slide__img sm-hide md-show lg-hide" src="/src/img/team-1-wide.jpg" alt="team member">
+              <img class="swiper-slide__img sm-hide lg-show xlg-hide" src="/src/img/team-1-xwide.jpg" alt="team member">
+              <img class="swiper-slide__img sm-hide lg-hide xlg-show" src="/src/img/team-1-xwide.jpg" alt="team member">
+              <div class="swiper-slide__text">
+                <h3 class="swiper-slide__crumb">команда</h3>
+                <h2 class="swiper-slide__title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                <p class="swiper-slide__name">Олександр Олександровський</p>
+                <p class="swiper-slide__job">Керуючий партнер</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-slide__img sm-show md-hide" src="/src/img/team-1.jpg" alt="team member">
+              <img class="swiper-slide__img sm-hide md-show lg-hide" src="/src/img/team-1-wide.jpg" alt="team member">
+              <img class="swiper-slide__img sm-hide lg-show xlg-hide" src="/src/img/team-1-xwide.jpg" alt="team member">
+              <img class="swiper-slide__img sm-hide lg-hide xlg-show" src="/src/img/team-1-xwide.jpg" alt="team member">
+              <div class="swiper-slide__text">
+                <h3 class="swiper-slide__crumb">команда</h3>
+                <h2 class="swiper-slide__title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                <p class="swiper-slide__name">Юрій Куц</p>
+                <p class="swiper-slide__job">Адвокат</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-slide__img sm-show md-hide" src="/src/img/team-1.jpg" alt="team member">
+              <img class="swiper-slide__img sm-hide md-show lg-hide" src="/src/img/team-1-wide.jpg" alt="team member">
+              <img class="swiper-slide__img sm-hide lg-show xlg-hide" src="/src/img/team-1-xwide.jpg" alt="team member">
+              <img class="swiper-slide__img sm-hide lg-hide xlg-show" src="/src/img/team-1-xwide.jpg" alt="team member">
+              <div class="swiper-slide__text">
+                <h3 class="swiper-slide__crumb">команда</h3>
+                <h2 class="swiper-slide__title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                <p class="swiper-slide__name">Марк Віко</p>
+                <p class="swiper-slide__job">Юрист</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="testimonials">
+          <h2 class="testimonials__title">They already trust us</h2>
+          <ul class="testimonials__list">
+            <li class="testimonials__list-item bg-blue flex">
+              <a href="#" target="_blank"><img src="/src/img/t-1.svg" alt="hillel logo"></a>
+            </li>
+            <li class="testimonials__list-item bg-dgreen flex">
+              <a href="#" target="_blank"><img src="/src/img/t-2.svg" alt="wannabiz logo"></a>
+            </li>
+            <li class="testimonials__list-item bg-orange flex">
+              <a href="#" target="_blank"><img src="/src/img/t-3.svg" alt="tapgerine logo"></a>
+            </li>
+            <li class="testimonials__list-item bg-violet flex">
+              <a href="#" target="_blank"><img src="/src/img/t-4.svg" alt="3dlook logo"></a></li>
+            <li class="testimonials__list-item bg-orange flex">
+              <a href="#" target="_blank"><img src="/src/img/t-5.svg" alt="orangear logo"></a>
+            </li>
+            <li class="testimonials__list-item bg-gray flex">
+              <a href="#" target="_blank"><img src="/src/img/t-6.svg" alt="adtelligent logo"></a>
+            </li>
+            <li class="testimonials__list-item md-show-flex bg-red sm">
+              <a href="#" target="_blank"><img src="/src/img/t-7.svg" alt="clickky logo"></a>
+            </li>
+            <li class="testimonials__list-item md-show-flex bg-olive sm">
+              <a href="#" target="_blank"><img src="/src/img/t-12.svg" alt="ecoleasing logo"></a>
+            </li>
+            <li class="testimonials__list-item md-show-flex bg-milk sm">
+              <a href="#" target="_blank"><img src="/src/img/t-8.svg" alt="infratek logo"></a>
+            </li>
+            <li class="testimonials__list-item md-show-flex bg-dblue sm">
+              <a href="#" target="_blank"><img src="/src/img/t-9.svg" alt="citypark logo"></a>
+            </li>
+            <li class="testimonials__list-item md-show-flex bg-pblue sm">
+              <a href="#" target="_blank"><img src="/src/img/t-10.svg" alt="artprint logo"></a>
+            </li>
+            <li class="testimonials__list-item md-show-flex bg-black sm">
+              <a href="#" target="_blank"><img src="/src/img/t-11.svg" alt="ultimatecard logo"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="publications">
+        <div class="container">
+          <h3 class="publications__crumb">publications</h3>
+          <h2 class="publications__title">We have something to tell</h2>
+          <div class="publications__items">
+            <div class="publications__items-wrapper">
+              <div class="publications__item">
+                <img class="publications__item-img" src="/src/img/blog-1.jpg" alt="blog photo">
+                <div class="publications__item-data">
+                  <h4 class="publications__item-title">Equity associate</h4>
+                  <time class="publications__item-date" datetime="22-04-2025">april 22</time>
+                  <p class="publications__item-text">
+                    I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…
+                  </p>
+                </div>
+              </div>
+              <div class="publications__item">
+                <img class="publications__item-img" src="/src/img/blog-2.jpg" alt="blog photo">
+                <div class="publications__item-data">
+                  <h4 class="publications__item-title">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h4>
+                  <time class="publications__item-date" datetime="29-09-2025">september 29</time>
+                  <p class="publications__item-text">
+                    And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="publications__item">
+              <img class="publications__item-img sm-show md-hide lg-show" src="/src/img/blog-3.jpg" alt="blog photo">
+              <img class="publications__item-img sm-hide md-show lg-hide" src="/src/img/blog-3-wide.jpg" alt="blog photo">
 
+              <div class="publications__item-data">
+                <h4 class="publications__item-title">Millennial Testament</h4>
+                <time class="publications__item-date" datetime="19-08-2025">august 19</time>
+                <p class="publications__item-text">
+                  What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__contacts">
+              <div class="footer__address-wrapper">
+                <address class="footer__contacts-address">
+                  Kyiv, Mechnikova str., 14/1
+                </address>
+                <a class="footer__contacts-map" href="#">on map</a>  
+              </div>
+              
+              <div class="footer__contacts-wrapper">
+                <div class="footer__contacts-fb">
+                  <a href="#">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_164831_2563)">
+                      <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" fill="white"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_164831_2563">
+                      <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                  </a>
+                </div>
+                <a href="tel:0800211927" class="footer__contacts-phone">
+                  0800 211 927
+                </a>
+                <a href="mailto:contact@forstudy.space" class="footer__contacts-mail">
+                  contact@forstudy.space
+                </a>
+              </div>
+            </div>
+            <p class="footer__contacts-copyright">
+              © 2021 HLEGAL Law company, LLC
+            </p>
+          </div>
+        </div>
+       </footer>
+    </div>
     <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>

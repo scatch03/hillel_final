@@ -1,0 +1,95 @@
+.swiper {
+    margin-bottom: 60px;
+    padding: 0 30px 30px 30px;
+
+    @media screen and (min-width: $breakpoint-md) {
+        padding: 20px 60px 30px 60px;
+    }
+
+    &-slide {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        visibility: hidden;
+
+        @media screen and (min-width: $breakpoint-md) {
+            flex-direction: row;
+            align-items: stretch;
+            margin-bottom: 30px;
+        }
+
+        &__img {
+            width: 100%;
+
+            @media screen and (min-width: $breakpoint-lg) {
+                height: 350px;
+                width: auto;
+            }
+            @media screen and (min-width: $breakpoint-xlg) {
+                height: 300px;
+                width: auto;
+            }
+        }
+        &-active {
+            visibility: visible;
+        }
+        &__text {
+            background-color: var(--color-bg);
+            padding: 30px;
+            border-radius: 0 0 var(--radius-md) var(--radius-md);
+            margin-bottom: 30px;
+            line-height: 1.2;
+
+            @media screen and (min-width: $breakpoint-md) {
+                margin-bottom: 0;
+                border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            }
+        }
+        &__crumb {
+            @include crumb-header;
+        }
+        &__title {
+            @include h2-text;
+            @include text-grad;
+            margin-bottom: 30px;
+    
+            @media screen and (min-width: $breakpoint-sm) {
+                font-size: 38px;
+            }
+        }
+        &__name {
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--color-text);
+            margin-bottom: 6px;
+        }
+        &__job {
+            font-size: 14px;
+            line-height: 1.7;
+            color: var(--color-text);
+        }
+    }
+    &-pagination {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+
+        &-bullet {
+            width: 16px;
+            height: 16px;
+            background-color: var(--color-link-regular);
+            transition: opacity 0.3s linear;
+
+            &:hover {
+                opacity: 0.6;
+            }
+
+            &-active {
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

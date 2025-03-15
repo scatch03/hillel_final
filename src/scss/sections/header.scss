@@ -1,0 +1,256 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    &__address {
+        color: var(--color-text);
+    }
+    &__top-line {
+        position: relative;
+        z-index: 9999;
+        background-color: rgba(245, 245, 250, 0.2);
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            justify-content: flex-start;
+            background-color: transparent;
+            padding: 50px 50px 10px 60px;
+
+            >*::before {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 10px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: #fff;
+            }
+            >*:first-child::before{
+                display: none;
+            }
+        }
+        @media screen and (min-width: $breakpoint-md) {
+            justify-content: flex-end;
+        }
+    }
+    &__bottom-line {
+        padding: 15px 15px 10px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            justify-content: flex-start;
+            background-color: transparent;
+            padding: 20px 15px 10px 60px;
+        }
+        @media screen and (min-width: $breakpoint-sm) {
+            padding: 0;
+        }
+    }
+    &__menu {
+        position: fixed;
+        z-index: 9999;
+        bottom: -120%;
+        left: 8px;
+        right: 8px;
+        background-color: #fff;
+        border-radius: var(--radius-md) var(--radius-md) 0 0;
+        padding: 64px 12px 12px 12px;
+        transition: all .5s linear;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        &.active {
+            bottom: 0;
+        }
+       
+        &-item {
+            background-color: #F5F5FA;
+            padding: 7px;
+            text-align: center;
+            border-radius: var(--radius-md);
+
+            a {
+                color: var(--color-link-regular);
+                @include h3-text();
+                transition: color .2s linear;
+
+                @media screen and (min-width: $breakpoint-sm) {
+                    @include h4-text();
+                    color: #fff;
+                }
+            }
+
+            &:active {
+                background-color: var(--color-separator);
+            }
+            &.active {
+                @media screen and (min-width: $breakpoint-sm) {
+                    border-bottom: 2px solid var(--color-accent);
+                }
+
+                a {
+                    color: var(--color-accent);
+                }
+            }
+
+            @media screen and (min-width: $breakpoint-sm) {
+                background: transparent;
+                padding: 0;
+                border-radius: 0;
+
+                &:hover {
+                    border-bottom: 2px solid #fff;
+                }
+                &.active:hover{
+                    border-bottom: 2px solid var(--color-accent);
+                }
+            }
+        }
+        &-close {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            margin-bottom: 20px;
+            transition: all .3s linear;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--color-separator);
+            }
+
+            @media screen and (min-width: $breakpoint-sm) {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: $breakpoint-sm) {
+            position: relative;
+            display: flex;
+            background-color: transparent;
+            padding: 20px 12px 12px 50px;
+            transition: none;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+        @media screen and (min-width: $breakpoint-md) {
+            justify-content: flex-end;
+            padding: 0px 60px 12px 50px;
+        }
+    }
+    &__lang-list {
+        list-style-type: none;
+        display: flex;
+    }
+    &__lang-list-item {
+        border-radius: var(--radius-sm);
+        transition: all 0.3s linear;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        &.active {
+            background-color: var(--color-accent);
+        }
+        a {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 5px 7px;
+            border-radius: var(--radius-sm);
+            text-transform: uppercase;
+        }
+    }
+    &__phone {
+        @include h4-text();
+    }
+    &__burger-menu {
+        display: inline-block;
+        height: 32px;
+        width: 32px;
+        border-radius: var(--radius-sm);
+        z-index: 1;
+
+        &:active {
+            background-color: var(--color-separator);
+            path {
+                stroke: #000;
+            }
+        }  
+        
+        @media screen and (min-width: $breakpoint-sm) {
+            display: none;
+        }
+    }
+    &__logo {
+        @media screen and (min-width: $breakpoint-md) {
+            position: absolute;
+            top: 50px;
+            left: 60px; 
+            width: 130px;  
+        }
+
+        .services-page & {
+            position: static;
+        }
+    }
+    &__crumb {
+
+        @media screen and (min-width: $breakpoint-md) {
+            position: absolute;
+            top: 50px;
+            left: 60px; 
+            z-index: 9999;
+        }
+
+        &-tag {
+            font-size: 20px;
+            color: #fff;
+
+            &::before {
+                content: '/';
+                font-weight: 600;
+                display: inline-block;
+                padding: 0 5px;
+                color: var(--color-accent);
+                transform: scale(1.4);
+            }
+
+            @media screen and (min-width: $breakpoint-md) {
+                font-size: 35px;
+            }
+        }
+    }
+    &__fb {
+        svg{
+            transition: all 0.3s linear;
+        }
+
+        &:hover {
+            svg {
+                transform: scale(1.15);
+            }
+            path {
+                fill: var(--color-accent);
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+    padding-top: 110px;
+    background: url('/src/img/symbol.svg') center top no-repeat;
+    background-size: auto 100%;
+    
+    &__scroll {
+        position: absolute;
+        bottom: 42px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        path, circle {
+            transition: stroke .3s linear;
+        }
+        &:hover{
+            path, circle {
+                stroke: var(--color-accent);
+            }
+        }
+    }
+    &__title {
+        @include hero-text();
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

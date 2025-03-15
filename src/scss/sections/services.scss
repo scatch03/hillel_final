@@ -1,0 +1,129 @@
+.services {
+    padding: 0 30px 30px 30px;
+
+    .services-page & {
+        padding-top: 110px;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            padding-top: 220px;
+        }
+        @media screen and (min-width: $breakpoint-md) {
+            padding-top: 180px;
+        }
+    }
+    &__crumb {
+       @include crumb-header;
+    }
+    &__title {
+        @include h2-text(38px);
+        @include text-grad;
+        margin-bottom: 30px;
+    }
+    &__list {
+
+        @media screen and (min-width: $breakpoint-sm) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px
+        }
+
+        &-item {
+            margin-bottom: 30px;
+    
+            h3 {
+                color: var(--color-link-regular);
+                font-weight: 700;
+                font-size: 22px;
+                margin: 30px 0 15px 0;
+            }
+            p {
+                color: #fff;
+                line-height: 1.6;
+            }
+
+            @media screen and (min-width: $breakpoint-sm) {
+                flex-basis: 45%;
+
+                .services-page & {
+                    flex-basis: 100%;
+                }
+            }
+            @media screen and (min-width: $breakpoint-md) {
+                flex-basis: 28%;
+            }
+
+            .services-page & {
+                margin-top: 30px;
+                font-size: 19px;
+                line-height: 1.5;
+                text-align: center;
+                h3 {
+                    @include h2-text;
+                    @include text-grad;
+                }
+                p {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        &-cta {
+            font-weight: 700;
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            padding: 18px 30px;
+            background-color: var(--color-link-regular);
+            border-radius: var(--radius-md);
+            margin: 30px 0 0 0;
+            box-shadow: 0px 0px 20px 0px #24A3FF80;
+
+            @media screen and (min-width: $breakpoint-sm) {
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    &__bulleting {
+        color: #fff;
+        border-top: 4px solid rgba(255, 255, 255, 0.5);
+        padding: 0 30px;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            padding: 0;
+
+            &-parts {
+                display: flex;
+                gap: 60px;
+            }
+        }
+
+        &-part {
+            list-style-type: disc;
+
+            @media screen and (min-width: $breakpoint-sm) {
+                padding-left: 15px;
+                flex-basis: 50%;
+            }
+
+            li {
+                font-size: 18px;
+                line-height: 1.5;
+                margin-bottom: 15px;
+            }
+            li::marker {
+                color: var(--color-accent);
+            }
+        }
+
+        h4 {
+            font-weight: 700;
+            font-size: 22px;
+            margin: 30px 0;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        padding: 0 60px 30px 60px;
+    }
+}

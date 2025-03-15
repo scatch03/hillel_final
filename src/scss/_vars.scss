@@ -1,17 +1,31 @@
 :root {
-	--main-color:  #323264;
-	--second-color: #161618;
-	--mute-color: #313136;
-	--main-text-color: rgba(255, 255, 245, .86);
-	--second-text-color: rgba(235, 235, 245, .6);
-	--hero-name-background: linear-gradient(120deg, #bd34fe 30%, #41d1ff);
-	--brand-color: #646cff;
-	--brand-light-color: #747bff;
+	// colors
+	--color-main:  #323264;
+	--color-alt: #46466E;
+	--color-soft: #686887;
+	--color-accent: #F0145A;
+	--color-link-regular: #24A3FF;
+	--color-link-hover: #0085FF;
+	--color-link-active: #006CCF;
+	--color-bg: #F5F5FA;
+	--color-bg-alt: #EDEDF7;
+	--color-text: #B3B3BA;
+	--color-separator: #E6E6F0;
+	
+	// gradients 
+	--gradient-regular: linear-gradient(215deg, #323264 0%, #323264 75%, #A54B5F 100%);
+	--gradient-soft: linear-gradient(42deg, #323264 14%, #323264 51%, #7A425E 87%);
+	--gradient-red: linear-gradient(323deg, #F0145A 7%, #693264 70%);
+	--gradient-supersoft: linear-gradient(228deg, #323264 12%, #323264 57%, #643E72 87%);
+	--gradient-red-text: linear-gradient(90deg, #F0145A 1%, #EF8080 99%);
+
+	// border radia
+	--radius-sm: 8px;
+	--radius-md: 12px;
 }
-[data-theme="light"] {
-	--main-color: rgba(255, 255, 245, .86);
-	--second-color: #fff;
-	--mute-color: rgba(235, 235, 245, .6);
-	--main-text-color: #161618;
-	--second-text-color: #1e1e20;
-}
+
+// responsive breakpoints
+$breakpoint-sm: 768px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1440px;
+$breakpoint-xlg: 1920px;

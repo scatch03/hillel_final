@@ -1,0 +1,47 @@
+.bg-box {
+    background: var(--gradient-regular);
+    min-height: 100vh;
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
+}
+
+.separator {
+    margin-bottom: 10px;
+
+    &::before {
+        content: '';
+        background-color: #cacadb;
+        display: block;
+        height: 20px;
+        margin: 0 20px;
+        z-index: -1;
+        border-radius: 0 0 var(--radius-md) var(--radius-md);
+        position: relative;
+        top: -10px
+    }
+    &::after {
+        content: '';
+        background-color: #E7E7F2;
+        display: block;
+        height: 20px;
+        margin: 0 40px;
+        z-index: -2;
+        border-radius: 0 0 var(--radius-md) var(--radius-md);
+        position: relative;
+        top: -20px
+    }
+}
+
+@import 'sections/header.scss';
+@import 'sections/hero.scss';
+@import 'sections/tabs.scss';
+@import 'sections/swiper.scss';
+@import 'sections/services.scss';
+@import 'sections/testimonials.scss';
+@import 'sections/publications.scss';
+@import 'sections/footer.scss';
+
+
+
+
+
+
