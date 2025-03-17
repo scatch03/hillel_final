@@ -7,6 +7,12 @@
 .separator {
     margin-bottom: 10px;
 
+    .index-page & {
+        @media screen and (min-width: $breakpoint-md) {
+            margin-bottom: 20px;
+        }
+    }
+
     &::before {
         content: '';
         background-color: #cacadb;

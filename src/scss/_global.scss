@@ -21,6 +21,18 @@ body {
 .flex {
 	display: flex;
 }
+.xsm-show {
+	display: none;
+	@media screen and (min-width: 50px) {
+		display: block;	
+	}
+}
+.xsm-hide {
+	display: block;
+	@media screen and (min-width: 50px) {
+		display: none;	
+	}
+}
 .sm-show {
 	display: none;
 	@media screen and (min-width: 300px) {

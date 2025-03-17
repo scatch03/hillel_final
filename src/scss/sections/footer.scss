@@ -3,6 +3,17 @@
     padding: 30px;
     text-align: center;
 
+    @media screen and (min-width: $breakpoint-md) {
+        .services-page & {
+            padding: 23px;
+        }
+    }
+    @media screen and (min-width: $breakpoint-xlg) {
+        .services-page & {
+            padding: 27px;
+        }
+    }
+
     a {
         text-decoration: none;
     }
@@ -29,6 +40,23 @@
                 content: '';
                 display: none;
             }
+
+            .services-page & {
+                justify-content: center;
+            }
+            .index-page & {
+                padding-left: 31px;
+            }
+        }
+        @media screen and (min-width: $breakpoint-md) {
+            .services-page & {
+                margin-left: -27px;
+            }
+        }
+        @media screen and (min-width: $breakpoint-xlg) {
+            .services-page & {
+                margin-left: -87px;
+            }
         }
     }
     &__wrapper {
@@ -36,6 +64,23 @@
             display: flex;
             justify-content: space-between;
             border-top: 2px solid #E6E6F0; 
+
+            .services-page & {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        @media screen and (min-width: $breakpoint-md) {
+            .services-page & {
+                flex-direction: row;
+                align-items: space-between;
+                margin: 0 36px;
+            }
+        }
+        @media screen and (min-width: $breakpoint-lg) {
+            .services-page & {
+                margin-top: 5px;
+            }
         }
     }
     &__contacts {
@@ -63,10 +108,42 @@
                     content: '';
                     display: none;
                 }
+
+                .services-page & {
+                    justify-content: center;
+                }
+                .index-page & {
+                    margin-left: 30px;
+                    margin-right: 30px;
+                }
+            }
+            @media screen and (min-width: $breakpoint-md) {
+                .services-page & {
+                    justify-content: flex-start;
+                }
+            }
+            @media screen and (min-width: $breakpoint-lg) {
+                .services-page & {
+                    margin-top: -3px;
+                }
+            }
+            @media screen and (min-width: $breakpoint-xlg) {
+                .services-page & {
+                    padding-left: 23px;
+                }
             }
         }
         &-address {
             color: #323264;
+
+            .services-page & {
+                @media screen and (min-width: $breakpoint-md) {
+                    margin-left: -111px;
+                }
+                @media screen and (min-width: $breakpoint-lg) {
+                    margin-left: -304px;
+                }
+            }
         }
         &-map {
             display: block;
@@ -74,7 +151,8 @@
             font-size: 12px;
             text-transform: uppercase;
             color: var(--color-link-regular);
-            margin-top: 10px;
+            margin-top: 8px;
+            letter-spacing: 1px;
 
             &:hover {
                 color: var(--color-accent);
@@ -87,17 +165,33 @@
         &-copyright {
             color: var(--color-text);
             text-transform: uppercase;
-            margin-top: 30px;
+            margin-top: 29px;
+            font-size: 15px;
 
             @media screen and (min-width: $breakpoint-sm) {
                 flex-basis: 50%;
                 text-align: right;
+
+                .index-page & {
+                    margin-top: 35px;
+                    font-size: 17px;
+                }
+            }
+            @media screen and (min-width: $breakpoint-md) {
+                .services-page & {
+                    margin-top: -31px;
+                }
+            }
+            @media screen and (min-width: $breakpoint-xlg) {
+                .services-page & {
+                    margin-right: 25px;
+                }
             }
         }
         &-fb {
             display: block;
             margin: 0 auto;
-            margin-top: 10px;
+            margin-top: 18px;
 
             @media screen and (min-width: $breakpoint-sm) {
                 display: flex;
@@ -121,7 +215,7 @@
             display: block;
             font-weight: 700;
             color: var(--color-alt);
-            margin-top: 10px;
+            margin-top: 5px;
 
             @media screen and (min-width: $breakpoint-sm) {
                 display: flex;
@@ -133,7 +227,7 @@
         &-mail {
             display: block;
             font-weight: 700;
-            margin-top: 10px;
+            margin-top: 8px;
             color: var(--color-link-regular);
 
             &:hover {

@@ -1,23 +1,51 @@
 .tabs {
     padding: 30px;
-    margin-bottom: 30px;
 
+    @media screen and (min-width: $breakpoint-sm) {
+        .index-page & {
+            margin-bottom: 30px;
+        }
+    }
     @media screen and (min-width: $breakpoint-md) {
         display: flex; 
         justify-content: space-between;
-     }
+
+        .index-page & {
+            margin-bottom: 0;
+            padding-bottom: 0
+        }
+    }
+    @media screen and (min-width: $breakpoint-lg) {
+        .index-page & {
+            justify-content: center;
+        }
+    }
 
     &__list {
         @include hero-text;
+        font-size: 30px;
         color: #B3B3BA;
         display: flex;
         gap: 30px;
         overflow: auto;
         margin-right: -30px;
-        margin-bottom: 30px;
+        margin-bottom: 26px;
 
+        @media screen and (min-width: $breakpoint-sm) {
+            .index-page & {
+                font-size: 38px;
+                padding-top: 27px;
+                padding-left: 27px;
+                margin-bottom: 56px;
+
+                @media screen and (min-width: $breakpoint-md) {
+                    padding-top: 0;
+                    margin-top: 27px;
+                }
+            }
+        }
         @media screen and (min-width: $breakpoint-md) {
-           width: 50%;
+           width: 49%;
            flex-direction: column;
            align-items: flex-end;
            justify-content: center;
@@ -26,6 +54,11 @@
            margin-right: 0;
            margin-bottom: 0;
         }
+        @media screen and (min-width: $breakpoint-lg) {
+            .index-page & {
+                width: 35%;
+            }
+        }
     }
     &__content {
         @media screen and (min-width: $breakpoint-md) {
@@ -33,6 +66,15 @@
             padding-left: 60px;
             display: flex;
             align-items: center;
+
+            .index-page & {
+                padding-left: 17px;
+            }
+         }
+         @media screen and (min-width: $breakpoint-lg) {
+            .index-page & {
+                padding-left: 30px;
+            }
          }
     }
     &__link {
@@ -50,13 +92,25 @@
     &__content-text {
         display: none;
         color: #fff;
-        padding-top: 30px;
-
+        padding-top: 25px;
         border-top: 4px solid rgba(255, 255, 255, 0.3);
+
+        @media screen and (min-width: $breakpoint-sm) {
+            .index-page & {
+                padding-top: 56px;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+        }
         @media screen and (min-width: $breakpoint-md) {
             border-top: none;
             padding-top: 0;
             max-width: 550px;
+
+            .index-page & {
+                padding-top: 0;
+                margin-top: -27px;
+            }
         }
 
         &.active {
@@ -66,11 +120,17 @@
         h2 {
             font-weight: 700;
             font-size: 20px;  
-            margin-bottom: 30px;                     
+            margin-bottom: 30px;  
+
+            @media screen and (min-width: $breakpoint-sm) {
+                .index-page & {
+                    font-size: 30px;
+                }
+            }                
         }
         p {
-            font-size: 18px;
-            line-height: 1.5;
+            font-size: 19px;
+            line-height: 1.55;
         }
     }
 }

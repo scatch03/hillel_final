@@ -1,14 +1,31 @@
 .services {
-    padding: 0 30px 30px 30px;
+    padding: 0 30px 42px 30px;
+
+    .index-page & {
+        padding-bottom: 30px;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            padding-bottom: 54px;
+        }
+        @media screen and (min-width: $breakpoint-md) {
+            margin-top: 10px;
+            padding-bottom: 50px;
+        }
+        @media screen and (min-width: $breakpoint-lg) {
+            padding-bottom: 55px;
+        }
+    }
 
     .services-page & {
         padding-top: 110px;
 
         @media screen and (min-width: $breakpoint-sm) {
             padding-top: 220px;
+            padding-bottom: 11px;
         }
         @media screen and (min-width: $breakpoint-md) {
-            padding-top: 180px;
+            padding-top: 116px;
+            padding-bottom: 44px;
         }
     }
     &__crumb {
@@ -18,6 +35,16 @@
         @include h2-text(38px);
         @include text-grad;
         margin-bottom: 30px;
+
+        .index-page & {
+            font-size: 30px;
+            margin-bottom: 26px;
+
+            @media screen and (min-width: $breakpoint-sm) {
+                font-size: 38px;
+                margin-bottom: 49px;
+            }
+        }
     }
     &__list {
 
@@ -26,15 +53,30 @@
             flex-wrap: wrap;
             gap: 60px
         }
+        @media screen and (min-width: $breakpoint-md) {
+            .index-page &{
+                gap: 68px
+            }
+        }
+        @media screen and (min-width: $breakpoint-lg) {
+            .index-page &{
+                column-gap: 89px;
+                row-gap: 40px;
+            }
+        }
 
         &-item {
-            margin-bottom: 30px;
+            margin-bottom: 28px;
     
             h3 {
                 color: var(--color-link-regular);
                 font-weight: 700;
                 font-size: 22px;
                 margin: 30px 0 15px 0;
+
+                .index-page & {
+                    margin-bottom: 13px;
+                }
             }
             p {
                 color: #fff;
@@ -46,6 +88,10 @@
 
                 .services-page & {
                     flex-basis: 100%;
+                    margin-top: 60px;
+                }
+                .index-page & {
+                    margin-bottom: 0;
                 }
             }
             @media screen and (min-width: $breakpoint-md) {
@@ -53,21 +99,32 @@
             }
 
             .services-page & {
-                margin-top: 30px;
+                margin-top: 22px;
                 font-size: 19px;
                 line-height: 1.5;
                 text-align: center;
+
+                @media screen and (min-width: $breakpoint-lg) {
+                    margin-left: 120px;
+                    margin-right: 120px;
+                }
+
                 h3 {
                     @include h2-text;
                     @include text-grad;
+                    font-size: 38px;
+                    margin-top: 25px;
+                    margin-bottom: 23px;
                 }
                 p {
-                    margin-bottom: 15px;
+                    margin-bottom: 16px;
                 }
+               
             }
         }
         &-cta {
             font-weight: 700;
+            font-size: 16px;
             text-align: center;
             color: #fff;
             text-decoration: none;
@@ -75,19 +132,25 @@
             padding: 18px 30px;
             background-color: var(--color-link-regular);
             border-radius: var(--radius-md);
-            margin: 30px 0 0 0;
+            margin: 10px 0 0 0;
             box-shadow: 0px 0px 20px 0px #24A3FF80;
 
             @media screen and (min-width: $breakpoint-sm) {
-                margin-top: 20px;
-                margin-bottom: 30px;
+                .services-page & {
+                    margin-top: 9px;
+                    margin-bottom: 30px;
+                }
+            }
+            @media screen and (min-width: $breakpoint-lg) {
+                .services-page & {
+                    margin-top: 10px;
+                }
             }
         }
     }
     &__bulleting {
         color: #fff;
         border-top: 4px solid rgba(255, 255, 255, 0.5);
-        padding: 0 30px;
 
         @media screen and (min-width: $breakpoint-sm) {
             padding: 0;
@@ -97,9 +160,16 @@
                 gap: 60px;
             }
         }
+        @media screen and (min-width: $breakpoint-lg) {
+            .services-page & {
+                margin-left: 120px;
+                margin-right: 120px;
+            }
+        }
 
         &-part {
             list-style-type: disc;
+            padding: 6px 15px;
 
             @media screen and (min-width: $breakpoint-sm) {
                 padding-left: 15px;
@@ -109,7 +179,7 @@
             li {
                 font-size: 18px;
                 line-height: 1.5;
-                margin-bottom: 15px;
+                margin-bottom: 11px;
             }
             li::marker {
                 color: var(--color-accent);
@@ -119,7 +189,7 @@
         h4 {
             font-weight: 700;
             font-size: 22px;
-            margin: 30px 0;
+            margin: 25px 0;
         }
     }
 
