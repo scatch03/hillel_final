@@ -5,6 +5,10 @@ body {
 	color: var(--color-main);
 }
 
+img {
+	max-width: 100%;
+}
+
 .wrapper {
 	min-height: 100vh;
 	min-width: 375px;
@@ -16,6 +20,15 @@ body {
 	max-width: 1720px;
 	margin: 0 auto;
 	position: relative;
+}
+
+.crumb {
+	@include crumb-header;
+}
+
+.section-title {
+	@include h2-text;
+    @include text-grad;
 }
 
 .flex {

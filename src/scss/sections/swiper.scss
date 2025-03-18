@@ -19,6 +19,10 @@
             margin-bottom: 30px;
         }
 
+        &__link {
+            text-decoration: none;
+            cursor: pointer;
+        }
         &__img {
             width: 100%;
 
@@ -72,12 +76,7 @@
                 border-radius: 0 var(--radius-md) var(--radius-md) 0;
             }
         }
-        &__crumb {
-            @include crumb-header;
-        }
         &__title {
-            @include h2-text;
-            @include text-grad;
             margin-bottom: 30px;
 
             .index-page & {

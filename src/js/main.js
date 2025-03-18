@@ -51,5 +51,6 @@ const swiper = new Swiper('.swiper', {
     autoplay: false,
     pagination: {
         el: '.swiper-pagination',
+        clickable: true
     }
 });

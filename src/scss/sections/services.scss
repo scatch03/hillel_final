@@ -28,13 +28,9 @@
             padding-bottom: 44px;
         }
     }
-    &__crumb {
-       @include crumb-header;
-    }
     &__title {
-        @include h2-text(38px);
-        @include text-grad;
         margin-bottom: 30px;
+        font-size: 38px;
 
         .index-page & {
             font-size: 30px;
@@ -191,6 +187,10 @@
             font-size: 22px;
             margin: 25px 0;
         }
+    }
+    &__link {
+        text-decoration: none;
+        cursor: pointer;
     }
 
     @media screen and (min-width: $breakpoint-sm) {

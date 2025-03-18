@@ -14,20 +14,20 @@
         padding: 30px 60px 0 60px;
     }
 
+    &__link {
+        cursor: pointer;
+        text-decoration: none;
+    }
     &__crumb {
-        @include crumb-header;
         @media screen and (min-width: $breakpoint-xlg) {
             margin-left: 60px;
             margin-right: 60px;
         }
     }
     &__title {
-        @include h2-text;
-        @include text-grad;
+        margin-bottom: 30px;
 
         .index-page & {
-            margin-bottom: -7px;
-
             @media screen and (min-width: $breakpoint-lg) {
                 margin-top: 5px;
             }
@@ -66,7 +66,7 @@
     &__item {
         background: #fff;
         border-radius: var(--radius-md);
-        margin-top: 30px;
+        //margin-top: 30px;
 
         @media screen and (min-width: $breakpoint-sm) {
             flex-basis: 49%;

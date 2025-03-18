@@ -80,6 +80,7 @@
     &__link {
         flex-shrink: 0;
         transition: color 0.3s linear;
+        cursor: pointer;
 
         &:hover{
             color: var(--color-accent);
