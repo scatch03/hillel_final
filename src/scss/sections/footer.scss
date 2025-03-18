@@ -50,7 +50,8 @@
         }
         @media screen and (min-width: $breakpoint-md) {
             .services-page & {
-                margin-left: -27px;
+                margin-left: 5px;
+                justify-content: flex-start;
             }
         }
         @media screen and (min-width: $breakpoint-xlg) {
@@ -138,11 +139,11 @@
 
             .services-page & {
                 @media screen and (min-width: $breakpoint-md) {
-                    margin-left: -111px;
+                    //margin-left: -111px;
                 }
-                @media screen and (min-width: $breakpoint-lg) {
-                    margin-left: -304px;
-                }
+                // @media screen and (min-width: $breakpoint-lg) {
+                //     margin-left: -304px;
+                // }
             }
         }
         &-map {
@@ -165,7 +166,7 @@
         &-copyright {
             color: var(--color-text);
             text-transform: uppercase;
-            margin-top: 29px;
+            margin-top: 30px;
             font-size: 15px;
 
             @media screen and (min-width: $breakpoint-sm) {
@@ -173,14 +174,11 @@
                 text-align: right;
 
                 .index-page & {
-                    margin-top: 35px;
                     font-size: 17px;
                 }
             }
             @media screen and (min-width: $breakpoint-md) {
-                .services-page & {
-                    margin-top: -31px;
-                }
+                align-self: flex-start;
             }
             @media screen and (min-width: $breakpoint-xlg) {
                 .services-page & {
