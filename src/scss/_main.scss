@@ -2,14 +2,12 @@
     background: var(--gradient-regular);
     min-height: 100vh;
     border-radius: 0 0 var(--radius-md) var(--radius-md);
-}
-
-.separator {
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+    position: relative;
 
     .index-page & {
         @media screen and (min-width: $breakpoint-md) {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
     }
 
@@ -21,8 +19,9 @@
         margin: 0 20px;
         z-index: -1;
         border-radius: 0 0 var(--radius-md) var(--radius-md);
-        position: relative;
-        top: -10px
+        position: absolute;
+        bottom: -10px;
+        width: calc(100% - 40px);
     }
     &::after {
         content: '';
@@ -32,8 +31,9 @@
         margin: 0 40px;
         z-index: -2;
         border-radius: 0 0 var(--radius-md) var(--radius-md);
-        position: relative;
-        top: -20px
+        position: absolute;
+        bottom: -20px;
+        min-width: calc(100% - 80px);
     }
 }
 
